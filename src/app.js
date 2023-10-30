@@ -22,16 +22,16 @@ let numeros = [
 ];
 let simbolos = ["❤", "♠", "♦", "♣"];
 function randomCard() {
-  let randomSimbolos = simbolos[Math.floor(Math.random() * simbolos.length)];
-  let randomNumeros = numeros[Math.floor(Math.random() * numeros.length)];
+  let randomSimbolo = simbolos[Math.floor(Math.random() * simbolos.length)];
+  let randomNumero = numeros[Math.floor(Math.random() * numeros.length)];
 
   let symbolUp = document.querySelector(".symbol-up");
   let symbolDown = document.querySelector(".symbol-down");
   let number = document.querySelector(".number");
 
-  symbolUp.textContent = randomSimbolos;
-  symbolDown.textContent = randomSimbolos;
-  number.textContent = randomNumeros;
+  symbolUp.textContent = randomSimbolo;
+  symbolDown.textContent = randomSimbolo;
+  number.textContent = randomNumero;
 }
 
 window.onload = randomCard();
